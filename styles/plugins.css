@@ -1,0 +1,120 @@
+@import url('https://v1.fontapi.ir/css/Shabnam');
+
+:root {
+    --primarycolor: #487bff;
+    --secondarycolor:#ff00d6;
+    --lightcolor: #fafafa;
+    --darkcolor:#4a4a4a;
+    --lightcolor2: #E0E0E0;
+    --lightcolor3: #616161;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Shabnam" , sans-serif;
+}
+html{
+    overflow-x: hidden;
+}
+
+body {
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+.main__btn{
+    background-color: var(--lightcolor);
+    color: var(--darkcolor);
+    outline: none;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 3rem;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 150ms;
+
+}
+
+.main__btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--darkcolor);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 150ms;
+}
+
+.main__btn:hover::before {
+    transform: scaleX(1);
+}
+.main__btn:hover {
+    color: var(--lightcolor);
+    background: transparent;
+}
+
+
+
+.main__outline__btn{
+    background: transparent;
+    color: var(--lightcolor);
+    outline: none;
+    border: 2px solid var(--lightcolor);
+    padding: 0.6rem 1rem;
+    border-radius: 3rem;
+    font-size: 12px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 150ms;
+
+}
+
+.main__outline__btn::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--darkcolor);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 150ms;
+}
+
+.main__outline__btn:hover::before {
+    transform: scaleX(1);
+}
+.main__outline__btn:hover {
+    color: var(--lightcolor);
+}
+
+.section__title {
+    position: relative;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    margin: 3rem auto;
+    width: fit-content;
+}
+.section__title::before{
+    position: absolute;
+    content: "";
+    background-color: var(--primarycolor);
+    width: 5rem;
+    height: 4px;
+    top: 2.5rem;
+    right: 1.5rem;
+    border-radius: 3rem;
+}
